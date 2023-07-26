@@ -4,138 +4,181 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario Programação</title>
+    <style>
+        *{
+            margin: 3px;
+            font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(60, 248, 107);
+        }
+        body{
+            background-image: url(Imagens/binarioleve.jpg);
+            width: 100vw;
+            height: 100%;
+            justify-content: center;
+            display: flex;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        main{
+            background-color: rgb(12, 6, 17);
+            width: 65vw;
+            border-radius: 10px;
+        }
+        header{
+            text-align: center;
+        }
+        h3{
+            text-align: center;
+        }
+        hr{
+            margin: 6px;
+        }
+        input.mover{
+            color: black;
+            float: right;
+        }
+        input{
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <h1>Formulario Programação</h1><hr>
-    
-           
-           <h3>Objetivo do Formulario</h3>
-        
-            Este formulario tera o objetivo de coletar dados sobre oque as pessoas pensão sobre a programação e o quão qualificado são os programadores atuai que se tem no mercado.
-        <hr>
+    <main>
+        <header>
+            <h1>Formulario Programação</h1><hr>
+            <h3>Objetivo do Formulario</h3>
+            <p>
+                Este formulario tera o objetivo de coletar dados sobre oque as pessoas pensão sobre a programação e o quão qualificado são os programadores atuai que se tem no mercado.
+            </p><hr>
+        </header>
 
-        <main>
-                <h4>Vamos Começar!</h4>
-            <section>
-                <h4>Dados Pessoais</h4>
-                <form action="FormularioProgramação.php" method="post" autocomplete="on">
-                    <p>
-                        <label for="inome">Nome:</label>
-                        <input type="text" name="nome" id="inome" required minlength="3" maxlength="30" placeholder="Insira seu nome" autocomplete="username">
-                    </p>
-                    <p>
-                        <label for="iidade">Data de nascimento:</label>
-                        <input type="date" name="idade" id="iidade" required>
-                    </p>
-                    <p>
-                        <label for="igenero">Genero:</label>
-                        <input type="text" name="genero" id="igenero" minlength="3" maxlength="30" placeholder="Insira seu genero">
-                    </p>
-                    <p>
-                        <label for="inacionalidade">Nacionalidade:</label>
-                        <input type="text" name="nacionalidade" id="inacionalidade" placeholder="Insira a sua nacionalidade">
-                    </p><hr>
-            </section>
-            <section>
-                <h4>Experiencias com programação</h4>
-                    <p>
-                        <label for="ir1"><p>Você pratica a programação? Se sim a quanto tempo você faz isso?</p></label>
-                        <textarea name="r1" id="ir1" cols="50" rows="9" required maxlength="750"></textarea>
-                    </p>
-                    <p>
-                        <label for="ir2"><p>Quais linguagens de programação você domina?</p></label>
-                         Python<input type="checkbox" name="r2Python" id="ir2">
-                         Java<input type="checkbox" name="r2Java" id="ir2">
-                         JavaScript<input type="checkbox" name="r2JavaS" id="ir2">
-                         PHP<input type="checkbox" name="r2PHP" id="ir2">
-                         C#<input type="checkbox" name="r2C#" id="ir2">
-                         C++<input type="checkbox" name="r2C++" id="ir2"><br>
-                         Outras<input type="text" name="r2Outras" id="ir2" maxlength="750">
-                    </p>
-                    <p>
-                        <label for="ir3"><p>Quais foram os projetos mais importantes que você desenvolveu?</p></label>
-                        <textarea name="r3" id="ir3" cols="50" rows="9" required maxlength="750"></textarea>
-                    </p><hr>
-            </section>
-            <section>
-                <h4>Presente e Futuro da Programação</h4>
-                <p>
-                    <label for="ir4"><p>No momento atual quais são as linguagens de programação que você considera mais promissoras?</p></label>
-                    <textarea name="r4" id="ir4" cols="50" rows="9" required maxlength="750"></textarea>
-                </p>
-                <p>
-                   <label for="ir5"><p>Quais são as tendencias emergentes que estão surgindo na área da programação que voce esta acompanhado?</p></label>
-                   <textarea name="r5" id="ir5" cols="50" rows="9" required maxlength="750"></textarea>
-                </p><hr>
-            </section>
-            <section>
-                <h4>Metodologias e Ferramentas de Desnevolvimento</h4>
-                <p>
-                    <label for="ir6"><p>Quais metodologias e ferramentas de desenvolvimento você ultiliza com mais frequencia?</p></label>
-                    <textarea name="r6" id="ir6" cols="50" rows="9" required maxlength="750"></textarea>
-                </p>
-                <p>
-                    <label for="ir7"><p>Quais foram as ferramentas de desenvolvimento que você ultilizou recentemente?</p></label>
-                    <textarea name="r7" id="ir7" cols="50" rows="9" required maxlength="750"></textarea>
-                </p>
-                <p>
-                    <label for="ir8"><p>Existe alguma nova ferramenta ou metodologia nova que vem chamando sua atenção recentemente?</p></label>
-                    <textarea name="r8" id="ir8" cols="50" rows="9" required maxlength="750"></textarea>
-                </p><hr>
-            </section>
-            <section>
-                <h4>Aprendizado e Aprimoramento</h4>
-                <p>
-                    <label for="ir9"><p>Como você busca aprender e se atualizar em relação a programação?</p></label>
-                    <textarea name="r9" id="ir9" cols="50" rows="9" required maxlength="750"></textarea>
-                </p>
-                <p>
-                    <label for="ir10"><p>Quais recursos(livros,tutorias,videos,etc) você considera mais ultil no momento de atualizar seus conhecimentos sobre programação?</p></label>
-                    <textarea name="r10" id="ir10" cols="50" rows="9" required maxlength="750"></textarea>
-                </p><hr>
-            </section>
-            <section>
-                <h4>Desafios e Obstacuos</h4>
-                <p>
-                    <label for="ir11"><p>Quais são os principais desafios que você enfrenta ao programar?</p></label>
-                    <textarea name="r11" id="ir11" cols="50" rows="9" required maxlength="750"></textarea>
-                </p>
-                <p>
-                    <label for="ir12"><p>Existe alguma area específica na programação em que você gostaria de receber um suporte?</p></label>
-                    <textarea name="r12" id="ir12" cols="50" rows="9" required maxlength="750"></textarea>
-                </p><hr>
-            </section>
-            <section>
-                <h4>Comunicação e Colaboração</h4>
-                <p>
-                    <label for="ir13"><p>Você participa de foruns, comunidades online ou grupo de programadores para compartilhar conhecimento ou colaborar com outros programadores?</p></label>
-                    <textarea name="r13" id="ir13" cols="50" rows="9" required maxlength="750"></textarea>
-                </p>
-                <p>
-                    <label for="ir14"><p>O quão importante você acha a troca de conhecimento e a colaboração na programação?</p></label>
-                    <textarea name="r14" id="ir14" cols="50" rows="9" required maxlength="750"></textarea>
-                </p><hr>
-            </section>
-            <section>
-                <h4>Expectativas Futuras</h4>
-                <p>
-                    <label for="ir15"><p>Onde você acha que a programação vai se desnvolver nos proximos anos?</p></label>
-                    <textarea name="r15" id="ir15" cols="50" rows="9" required maxlength="750"></textarea>
-                </p>
-                <p>
-                    <label for="ir16"><p>Quais são as suas expectativas pessoais sobre seu crescimento como programador?</p></label>
-                    <textarea name="r16" id="ir16" cols="50" rows="9" required maxlength="750"></textarea>
-                </p><hr>
-            </section>
-            <aside>
-                <h4>Finalização</h4>
-                <label for="ir17"><p>Caso você tenha algum comentario adicioal sobre a programação e queira compartilhar deixe aqui seu comentario</p></label>
-                <textarea name="r17" id="ir17" cols="50" rows="9"></textarea>
-            </aside>
-            <input type="submit">
-            <input type="reset">
-            </form>
-        </main>
+        <section>
+            <h3>Vamos Começar!</h3>
+            <h3>Dados Pessoais</h3>
+         <form action="FormularioProgramação.php" method="post" autocomplete="on">
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required minlength="3" maxlength="30" placeholder="Insira seu nome" autocomplete="username">
+            </p>
+            <p>
+                <label for="iidade">Data de nascimento:</label>
+                <input type="date" name="idade" id="iidade" >
+            </p>
+            <p>
+                <label for="igenero">Genero:</label>
+                <input type="text" name="genero" id="igenero" minlength="3" maxlength="30" placeholder="Insira seu genero">
+            </p>
+            <p>
+                <label for="inacionalidade">Nacionalidade:</label>
+                <input type="text" name="nacionalidade" id="inacionalidade" placeholder="Insira a sua nacionalidade">
+            </p><hr>
+        </section>
 
+        <section>
+            <h3>Experiencias com programação</h3>
+                <p>
+                    <label for="ir1"><p>Você pratica a programação? Se sim a quanto tempo você faz isso?</p></label>
+                    <textarea name="r1" id="ir1" cols="42" rows="7"  maxlength="750"></textarea>
+                </p>
+                <p>
+                    <label for="ir2"><p>Quais linguagens de programação você domina?</p></label>
+                    Python<input type="checkbox" name="r2Python" id="ir2">
+                    Java<input type="checkbox" name="r2Java" id="ir2">
+                    JavaScript<input type="checkbox" name="r2JavaS" id="ir2">
+                    PHP<input type="checkbox" name="r2PHP" id="ir2">
+                    C#<input type="checkbox" name="r2C#" id="ir2">
+                    C++<input type="checkbox" name="r2C++" id="ir2"><br>
+                    Outras<input type="text" name="r2Outras" id="ir2" maxlength="750">
+                </p>
+                <p>
+                    <label for="ir3"><p>Quais foram os projetos mais importantes que você desenvolveu?</p></label>
+                    <textarea name="r3" id="ir3" cols="42" rows="7"  maxlength="750"></textarea>
+                </p><hr>
+        </section>
+
+        <section>
+            <h3>Presente e Futuro da Programação</h3>
+            <p>
+                <label for="ir4"><p>No momento atual quais são as linguagens de programação que você considera mais promissoras?</p></label>
+                <textarea name="r4" id="ir4" cols="42" rows="7"  maxlength="750"></textarea>
+            </p>
+            <p>
+                <label for="ir5"><p>Quais são as tendencias emergentes que estão surgindo na área da programação que voce esta acompanhado?</p></label>
+                <textarea name="r5" id="ir5" cols="42" rows="7"  maxlength="750"></textarea>
+            </p><hr>
+        </section>
+
+        <section>
+            <h3>Metodologias e Ferramentas de Desnevolvimento</h3>
+            <p>
+                <label for="ir6"><p>Quais metodologias e ferramentas de desenvolvimento você ultiliza com mais frequencia?</p></label>
+                <textarea name="r6" id="ir6" cols="42" rows="7"  maxlength="750"></textarea>
+            </p>
+            <p>
+                <label for="ir7"><p>Quais foram as ferramentas de desenvolvimento que você ultilizou recentemente?</p></label>
+                <textarea name="r7" id="ir7" cols="42" rows="7"  maxlength="750"></textarea>
+            </p>
+            <p>
+                <label for="ir8"><p>Existe alguma nova ferramenta ou metodologia nova que vem chamando sua atenção recentemente?</p></label>
+                <textarea name="r8" id="ir8" cols="42" rows="7"  maxlength="750"></textarea>
+            </p><hr>
+        </section>
+
+        <section>
+            <h3>Aprendizado e Aprimoramento</h3>
+            <p>
+                <label for="ir7"><p>Como você busca aprender e se atualizar em relação a programação?</p></label>
+                <textarea name="r7" id="ir7" cols="42" rows="7"  maxlength="750"></textarea>
+            </p>
+            <p>
+                <label for="ir10"><p>Quais recursos(livros,tutorias,videos,etc) você considera mais ultil no momento de atualizar seus conhecimentos sobre programação?</p></label>
+                <textarea name="r10" id="ir10" cols="42" rows="7"  maxlength="750"></textarea>
+            </p><hr>
+        </section>
+
+        <section>
+            <h3>Desafios e Obstacuos</h3>
+            <p>
+                <label for="ir11"><p>Quais são os principais desafios que você enfrenta ao programar?</p></label>
+                <textarea name="r11" id="ir11" cols="42" rows="7"  maxlength="750"></textarea>
+            </p>
+            <p>
+                <label for="ir12"><p>Existe alguma area específica na programação em que você gostaria de receber um suporte?</p></label>
+                <textarea name="r12" id="ir12" cols="42" rows="7"  maxlength="750"></textarea>
+            </p><hr>
+        </section>
+
+        <section>
+            <h3>Comunicação e Colaboração</h3>
+            <p>
+                <label for="ir13"><p>Você participa de foruns, comunidades online ou grupo de programadores para compartilhar conhecimento ou colaborar com outros programadores?</p></label>
+                <textarea name="r13" id="ir13" cols="42" rows="7"  maxlength="750"></textarea>
+            </p>
+            <p>
+                <label for="ir14"><p>O quão importante você acha a troca de conhecimento e a colaboração na programação?</p></label>
+                <textarea name="r14" id="ir14" cols="42" rows="7"  maxlength="750"></textarea>
+            </p><hr>
+        </section>
+
+        <section>
+            <h3>Expectativas Futuras</h3>
+            <p>
+                <label for="ir15"><p>Onde você acha que a programação vai se desnvolver nos proximos anos?</p></label>
+                <textarea name="r15" id="ir15" cols="42" rows="7"  maxlength="750"></textarea>
+            </p>
+            <p>
+                <label for="ir16"><p>Quais são as suas expectativas pessoais sobre seu crescimento como programador?</p></label>
+                <textarea name="r16" id="ir16" cols="42" rows="7"  maxlength="750"></textarea>
+            </p><hr>
+        </section>
+
+        <footer>
+            <h3>Finalização</h3>
+            <label for="ir17"><p>Caso você tenha algum comentario adicioal sobre a programação e queira compartilhar deixe aqui seu comentario</p></label>
+            <textarea name="r17" id="ir17" cols="42" rows="7"></textarea>
+            <p><input class="mover" type="submit"></p>
+        </footer>
+         </form>
+    </main>
 </body>
 </html>
