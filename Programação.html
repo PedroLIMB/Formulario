@@ -42,8 +42,11 @@
         }
         input{
             color: black;
+            border: transparent;
+            padding: 10px;
+            border-radius: 8px;
         }
-        .enviar input{
+        .enviar{
             border: transparent;
             padding: 10px;
             border-radius: 8px;
@@ -51,6 +54,12 @@
         textarea{
             color: black;
         }
+        button.enviar:hover{
+           transform: scale(1.1);
+           transition: 0.5s;
+           background-color: rgb(30, 255, 0);
+           color: rgb(0, 0, 0);
+}
     </style>
 </head>
 <body>
@@ -186,7 +195,7 @@
             <h3>Finalização</h3>
             <label for="ir17"><p>Caso você tenha algum comentario adicioal sobre a programação e queira compartilhar deixe aqui seu comentario</p></label>
             <textarea name="r17" id="ir17" cols="42" rows="7"></textarea>
-            <input type="submit" class="mover">
+            <button class="enviar" onclick="alert('Suas respostas foram enviadas e salvas com sucesso')">Enviar</button>
         </footer>
     </form>
     </main>
